@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media queary</title>
+    <style>
+        section {
+            width: 80%;
+            margin-left: 10%;
+
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            /* background-color: rgb(172, 131, 121); */
+        }
+
+        header h1 {
+            background-color: tomato;
+            margin-top: 0%;
+            text-align: center;
+            color: white;
+            font-size: 37px;
+            margin-bottom: 0%;
+        }
+        header h1 a{
+            text-decoration: none;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav ul {
+            margin: 0%;
+            background-color: crimson;
+            padding: 0%;
+        }
+
+        nav li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: honeydew;
+            font-size: 19px;
+        }
+
+        nav ul li:hover {
+            background-color: rgb(255, 59, 59);
+        }
+
+        main aside {
+            float: left;
+            width: 19%;
+            min-height: 500px;
+            background-color: rgb(238, 203, 203);
+            padding-top: 5px;
+        }
+
+        main aside ul {
+            padding: 0%;
+            margin: 0%;
+
+        }
+
+        main aside ul li {
+            list-style: none;
+            background-color: rgb(243, 79, 79);
+            border-bottom: 1px groove rgb(207, 203, 203);
+            padding: 5px;
+        }
+
+        main aside ul li:hover {
+            background-color: #a52a2a;
+        }
+
+        main aside ul li:nth-child(odd):hover {
+            background-color: #ec3c3c;
+        }
+
+        main aside ul li:nth-child(odd) {
+            background-color: rgb(246, 92, 31);
+        }
+
+        main aside ul li a {
+            text-decoration: none;
+            color: white;
+            padding-left:37%;
+            display: block;
+        }
+
+        main article{
+            width: 80%;
+            float: right;
+        }
+
+
+
+        article div{
+            width: 33%;
+            height: 250px;
+            background-color: rgb(248, 202, 202);
+            float: left;
+            margin: 1.2px;
+        }
+
+       main footer{
+            clear: both;
+            background-color: #a52a2a;
+            display: flex;
+        }
+        .fd{
+            /* flex:content; */
+            width: 100%;
+            padding: 5px;
+            border: 1px  solid black;
+        }
+
+        /* footer section{
+            background-color: #a52a2a;
+        } */
+        /* .div{ 
+            float: left;
+            width: 31%;
+         } */
+        @media screen and (max-width:1110px){
+            article div{
+                width: 32%;
+                height: 220px;
+                margin: 2px;
+            }    
+        }
+        @media screen and (max-width:1050px){
+            main aside ul li a {
+                padding-left: 40%;
+            }
+        }
+        @media screen and (max-width:800px){
+
+            main aside{
+                width: auto;
+                float: none;
+                min-height: auto;
+            }
+            main article{
+                width: auto;
+                /* float: none; */
+                
+            }
+            article div{
+                width: 30%;
+                /* float: left; */
+                margin-right: 14px;
+            }
+        }
+        @media screen and (max-width:700px){
+            article div{
+                width: 49%;
+                margin-right: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1><a href="">This is Header!</a> </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">contract</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <aside>
+                <ul>
+                    <li><a href="#">links 1</a></li>
+                    <li><a href="#">links 2</a></li>
+                    <li><a href="#">links 3</a></li>
+                    <li><a href="#">links 4</a></li>
+                    <li><a href="#">links 5</a></li>
+                </ul>
+            </aside>
+            <article>
+                <div>
+                    <p>lorem14</p>
+                </div>
+                <div>
+                    <p>lorem14</p>
+                </div>
+                <div>
+
+                    <p>lorem14</p>
+                </div>
+                <div>
+                    <p>lorem14</p>
+                </div>
+                <div>
+                    <p>lorem14</p>
+                </div>
+                <div>
+                    <p>lorem14</p>
+                </div>
+                <div>
+                       <p>lorem14</p>
+                </div>
+                <div>
+                    <p>lorem14</p>
+                </div>
+            </article>
+
+            <footer>
+                <div class="fd">
+                    <h1>This si name one</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam harum placeat voluptatum.</p>
+                </div>
+                <div class="fd">this is div 2</div>
+                <div class="fd">this is div 3</div>
+            </footer>
+        </main>
+
+
+    </section>
+</body>
+
+</html>
